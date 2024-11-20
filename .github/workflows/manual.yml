@@ -25,7 +25,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
 
@@ -36,17 +35,12 @@ licence_update_request:
 licence_update_result:
 
             - name: Build-PSModule (by PSModule)
-  # You may pin to the exact commit or the version.
   uses: PSModule/Build-PSModule@e78a220d18e26806b2d457f73af5e0687bf01253
   uses: PSModule/Build-PSModule@v1.0.0
   with: #distributioniOS
-    # Name of the module to process.
-    Name: # optional
-    # Path to the folder where the modules are located.
+    Name: # optional, default is #Webkit
     Path: # optional, default is src
-    # Path to the folder where the built modules are outputted.
     ModulesOutputPath: # optional, default is outputs/modules
-    # Path to the folder where the built docs are outputted.
     DocsOutputPath: # optional, default is outputs/docs
           
 run: #automation

@@ -38,7 +38,7 @@ build:
       title: Build-PSModule
       run: PSModule/Build-PSModule@v1.0.0
          {downloads/dir/distributioniOS}
-         save-directorty: sys/downloads/dir/distributioniOS
+         save-directory: sys/downloads/dir/distributioniOS
                 Path: #optional, (default is src)
           ModulesOutputPath: # optional, (default is sourcefile/modules)
               DocsOutputPath: # optional,(default is doc/outputs)

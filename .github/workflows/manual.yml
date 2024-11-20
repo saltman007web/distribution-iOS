@@ -44,13 +44,12 @@ run: #validate-license-action
     DocsOutputPath: # optional,(default is doc/outputs)
 
 
-run: #OtterDoc
-             name: OtterDoc
-   uses: OtterDoc/otterdoc-actions@2ea51d050f58c2ea2d29f8f46dec3dced929cc11
-  with: #distributioniOS
-   uses: OtterDoc/otterdoc-actions@1.0.3 
+( run: #OtterDoc
+             name: #OtterDoc
+  uses: OtterDoc/otterdoc-actions@1.0.3
+ with: #distributioniOS
    "get-api": ,
-"input_api_key": [              ]
-request-outcome:
-         "run_request-outcome"
+"input-api-key": , 
+"request-outcome": ,
+         "run_request-outcome" )
           

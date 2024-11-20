@@ -32,24 +32,20 @@ jobs:
 run: #validate-license-action
     - name: validate-licence-action
     - uses: datreeio/validate-license-action@v1.0.0
-"save_outcome": 
 
-- run: #Build-PsModule
-         - name: #Build-PSModule
-  uses: PSModule/Build-PSModule@v1.0.0
-  with: #distributioniOS
-    Name: # optional, (default is #Webkit)
-    Path: # optional, (default is src)
-    ModulesOutputPath: # optional, (default is sourcefile/modules)
-    DocsOutputPath: # optional,(default is doc/outputs)
-
-
-( run: #OtterDoc
-             name: #OtterDoc
-  uses: OtterDoc/otterdoc-actions@1.0.3
- with: #distributioniOS
-   "get-api": ,
-"input-api-key": , 
-"request-outcome": ,
-         "run_request-outcome" )
+build:
+      start-up: Build-PsModule
+      title: Build-PSModule
+      run: PSModule/Build-PSModule@v1.0.0
+         {downloads/dir/distributioniOS}
+         save-directorty: sys/downloads/dir/distributioniOS
+                Path: #optional, (default is src)
+          ModulesOutputPath: # optional, (default is sourcefile/modules)
+              DocsOutputPath: # optional,(default is doc/outputs)
+env: 
+        run: working-directory
+        with: (distributioniOS)
+        open: (distributioniOS)
+          "run_api_result"
+         
           

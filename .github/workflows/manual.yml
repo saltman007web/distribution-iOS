@@ -31,8 +31,13 @@ jobs:
       
 run: #validate-license-action
     - uses: datreeio/validate-license-action@v1.0.0
-licence_update_request:
-licence_update_result:
+    
+licence_update_request:[
+]
+licence_update_result: [
+]
+
+run: #Build-PsModule
 
             - name: Build-PSModule (by PSModule)
   uses: PSModule/Build-PSModule@e78a220d18e26806b2d457f73af5e0687bf01253
@@ -44,10 +49,13 @@ licence_update_result:
     DocsOutputPath: # optional, default is outputs/docs
           
 run: #automation
+
 name: OtterDoc
    uses: OtterDoc/otterdoc-actions@2ea51d050f58c2ea2d29f8f46dec3dced929cc11
-  uses: OtterDoc/otterdoc-actions@1.0.3
   with: #distributioniOS
-    # An API key for OtterDoc
-    key: 
+   uses: OtterDoc/otterdoc-actions@1.0.3 
+   get-api: ,
+input_api_key: [              ]
+request-outcome:
+         "run_request-outcome"
           

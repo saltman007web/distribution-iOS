@@ -30,3 +30,32 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
+
+      
+run: #validate-license-action
+    - uses: datreeio/validate-license-action@v1.0.0
+update_request:
+update_result:
+
+            - name: Build-PSModule (by PSModule)
+  # You may pin to the exact commit or the version.
+  # uses: PSModule/Build-PSModule@e78a220d18e26806b2d457f73af5e0687bf01253
+  uses: PSModule/Build-PSModule@v1.0.0
+  with: #distributioniOS
+    # Name of the module to process.
+    Name: # optional
+    # Path to the folder where the modules are located.
+    Path: # optional, default is src
+    # Path to the folder where the built modules are outputted.
+    ModulesOutputPath: # optional, default is outputs/modules
+    # Path to the folder where the built docs are outputted.
+    DocsOutputPath: # optional, default is outputs/docs
+          
+run: #automation
+name: OtterDoc
+   uses: OtterDoc/otterdoc-actions@2ea51d050f58c2ea2d29f8f46dec3dced929cc11
+  uses: OtterDoc/otterdoc-actions@1.0.3
+  with: #distributioniOS
+    # An API key for OtterDoc
+    key: 
+          

@@ -32,10 +32,9 @@ jobs:
 run: #validate-license-action
     - uses: datreeio/validate-license-action@v1.0.0
     
-licence_update_request:[
+"licence_update_request" [
 ]
-licence_update_result: [
-]
+"licence_update_result"
 
 run: #Build-PsModule
 
